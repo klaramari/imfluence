@@ -8,10 +8,11 @@
   </head>
   <body>
     <div class="flex vh">
-      <img src="imfluence.gif" alt="imfluence" />
+      <img id="gif" src="imfluence.gif" alt="imfluence" />
       <div class="flex">
         <p>Next generation cancer diagnosis</p>
         <a
+          id="button"
           href="javascript:window.location.href = 'mailto:' + ['carlos.goncalves','univie.ac.at'].join('@')"
           >Contact us</a
         >
@@ -19,4 +20,14 @@
       <p class="m-50">Copyright 2024 Imfluence</p>
     </div>
   </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const gif = document.getElementById("button");
+
+      gif.addEventListener("mouseenter", function () {
+        document.getElementById("gif").src = "imfluence.gif";
+      });
+    });
+  </script>
 </html>
