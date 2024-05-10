@@ -19,6 +19,7 @@ body {
 
 #gif {
   max-width: min(400px, 90%);
+  object-fit: contain;
 }
 
 p {
