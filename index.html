@@ -7,8 +7,8 @@
     <title>Imfluence</title>
   </head>
   <body>
-    <div class="flex fullheight">
-      <img id="gif" src="imfluence.gif" alt="imfluence" />
+    <div id="container" class="flex fullheight">
+      <img id="gif" src="./assets/imfluence.gif" alt="imfluence" />
       <div class="flex">
         <p>Next generation cancer diagnosis</p>
         <a
@@ -19,15 +19,6 @@
       </div>
       <p class="m-50">Copyright 2024 Imfluence</p>
     </div>
+    <script src="script.js"></script>
   </body>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const gif = document.getElementById("button");
-
-      gif.addEventListener("mouseenter", function () {
-        document.getElementById("gif").src = "imfluence.gif";
-      });
-    });
-  </script>
 </html>
